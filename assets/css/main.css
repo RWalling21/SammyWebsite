@@ -2123,25 +2123,42 @@ input, select, textarea {
 				width: 100%;
 			}
 
-    .image.leadership {
-      margin: 0 0 2em 0;
-    }
-      .image.leadership img {
-        max-width: 300px;
-        max-height:400px;
-        padding-right: 20px;
-        object-fit: fill;
-      }
-
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-			.image.fit img {
-				width: 100%;
+			.image.leadership {
+				margin: 0 2em 3em 0;
 			}
+			
+			.image.leadership img {
+				width: 100%; 
+				max-width: 300px; 
+				height: 350px; 
+				object-fit: cover;
+				border-radius: 25px;
+			}
+			
+			@media (max-width: 768px) {
+				.image.leadership img {
+					max-width: 200px; 
+					height: 250px; 
+				}
+			}
+			
+			@media (max-width: 480px) {
+				.image.leadership img {
+					max-width: 150px; 
+					height: 175px; 
+				}
+			}
+			
+				.image.fit {
+					display: block;
+					margin: 0 0 2em 0;
+					width: 100%;
+				}
+				
+					.image.fit img {
+						width: 100%;
+					}
+			
 
 /* List */
 
